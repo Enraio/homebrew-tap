@@ -5,20 +5,20 @@
 class Reins < Formula
   desc "Reins host daemon — watch and approve your AI coding agents from your phone"
   homepage "https://github.com/enraio/reins"
-  version "0.5.0"
+  version "0.5.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enraio/reins/releases/download/v0.5.0/reins_0.5.0_darwin_amd64.tar.gz"
-      sha256 "38f8e07faf38fb667c0a389dc309410c4bdb839448af4869583b8dd3195e58e2"
+      url "https://github.com/enraio/reins/releases/download/v0.5.1/reins_0.5.1_darwin_amd64.tar.gz"
+      sha256 "2931e3c11a1e0143364aaf73ca83b715819cd64a9da90f539e24f26af983f319"
 
       define_method(:install) do
         bin.install "reins"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/enraio/reins/releases/download/v0.5.0/reins_0.5.0_darwin_arm64.tar.gz"
-      sha256 "0a68f2c935115ab312c9c1e9d66a5fdb653d1ceaa6519831770b7707a43397fd"
+      url "https://github.com/enraio/reins/releases/download/v0.5.1/reins_0.5.1_darwin_arm64.tar.gz"
+      sha256 "0ee1582b60c53f45b285b5b02ea59fe93def7dd93d065bcd59c573d6f6a53e23"
 
       define_method(:install) do
         bin.install "reins"
@@ -28,15 +28,15 @@ class Reins < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/enraio/reins/releases/download/v0.5.0/reins_0.5.0_linux_amd64.tar.gz"
-      sha256 "d2d451b8c3f7d3265fdf637587fa24802409dd49f76bdf4fd197c78551c4ba74"
+      url "https://github.com/enraio/reins/releases/download/v0.5.1/reins_0.5.1_linux_amd64.tar.gz"
+      sha256 "8ba3d7cb5c4a372ca5de55bf5cdce3a0213977e356fc7474fb7a351178559910"
       define_method(:install) do
         bin.install "reins"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/enraio/reins/releases/download/v0.5.0/reins_0.5.0_linux_arm64.tar.gz"
-      sha256 "70c602660d4ea9fa3b43fbc4f8be80d008ffb3ca9a0f3e07687f01da336890aa"
+      url "https://github.com/enraio/reins/releases/download/v0.5.1/reins_0.5.1_linux_arm64.tar.gz"
+      sha256 "96e576d81684f89e7f6f1f6ba821cb303dfda9a5ae5d016f9692c1f8344a939c"
       define_method(:install) do
         bin.install "reins"
       end
